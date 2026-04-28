@@ -12,8 +12,10 @@ class Node
 
 class DoublyLinkedList
 {
+    private:
+    Node *START;
     
-}
+};
 
 int main(){
 
