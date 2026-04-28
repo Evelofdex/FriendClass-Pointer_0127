@@ -10,6 +10,11 @@ class Node
     Node *prev;
 };
 
+class DoublyLinkedList
+{
+    
+}
+
 int main(){
 
 }
