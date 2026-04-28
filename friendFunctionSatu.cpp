@@ -1,9 +1,32 @@
 #include <iostream>
 #include <string>
-
-
 using namespace std;
 
-int main(){
-    
+class mahasiswa{
+    private:
+    string nama;
+
+    public:
+    friend void setNama(mahasiswa &a, string);
+};
+
+void setNama(mahasiswa &a, string b);{
+
 }
+
+int main(){
+    mahasiswa joko;
+    setNama(joko, "Kairi Kumar");
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
