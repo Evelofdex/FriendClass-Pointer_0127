@@ -14,7 +14,11 @@ class DoublyLinkedList
 {
     private:
     Node *START;
-    
+
+    public:
+    DoublyLinkedList(){
+        
+    }
 };
 
 int main(){
