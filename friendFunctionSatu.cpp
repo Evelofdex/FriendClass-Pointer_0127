@@ -2,32 +2,41 @@
 #include <string>
 using namespace std;
 
-class mahasiswa{
+class siswa;
+class orang{
     private:
     string nama;
 
     public:
-    friend void setNama(mahasiswa &a, string);
+    void setNama(string pNama);
+    friend class siswa;
 };
 
-void setNama(mahasiswa &a, string b){
-    a.nama = b;
-    cout << a.nama;
+class siswa{
+    private:
+    int id;
+
+    public:
+    void setId(int pId);
+    void displayAll(orang &a);
+};
+
+void siswa::displayAll(orang &a){
+    cout << id << endl << a.nama;
 }
+void orang::setNama(string pNama){
+    nama = pNama;
+}
+void siswa::setId(int pId){
+    id = pId;
+}
+
 
 int main(){
-    mahasiswa joko;
-    setNama(joko, "Kairi Kumar");
+    orang joko;
+    joko.setNama("Joko Susilo");
+    siswa joko_siswa;
+    joko_siswa.setId(1);
+    joko_siswa.displayAll(joko);
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
