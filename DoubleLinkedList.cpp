@@ -2,6 +2,7 @@
 #include <string>
 using namespace std;
 
+class siswa;
 class Node
 {
     public:
@@ -17,7 +18,7 @@ class DoublyLinkedList
 
     public:
     DoublyLinkedList(){
-        
+
     }
 };
 
